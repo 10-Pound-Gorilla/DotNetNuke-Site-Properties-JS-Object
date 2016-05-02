@@ -1,13 +1,6 @@
-<%
-	/// User info
-	int PortalID = PortalSettings.ActiveTab.PortalID;
-	int UserID = UserController.GetCurrentUserInfo().UserID;
-	var user = UserController.GetUserById(PortalID, UserID);
-	var serializer = new System.Web.Script.Serialization.JavaScriptSerializer();
-%>
-
 <script type="text/javascript">
 	var dnnVars = {
+		editMode: <% =DotNetNuke.Common.Globals.IsEditMode().ToString().ToLower() %>,
 		page : {
 			id : <% =PortalSettings.ActiveTab.TabID %>,
 			name : "<% =PortalSettings.ActiveTab.TabName %>",
