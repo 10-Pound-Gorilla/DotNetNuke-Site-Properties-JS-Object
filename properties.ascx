@@ -7,6 +7,7 @@
 			title : "<% =PortalSettings.ActiveTab.Title %>",
 			description : "<% =PortalSettings.ActiveTab.Description %>",
 			keywords : "<% =PortalSettings.ActiveTab.KeyWords %>",
+			icon : "<% =PortalSettings.ActiveTab.IconFile %>"
 			order : <% =PortalSettings.ActiveTab.TabOrder %>,
 			path : "<% =PortalSettings.ActiveTab.TabPath %>",
 			type : "<% =PortalSettings.ActiveTab.TabType %>",
